@@ -1,7 +1,7 @@
 DO
 $$
 DECLARE
-    target_user TEXT := 'pguser';
+    target_user TEXT := 'App';
     target_functions TEXT[] := ARRAY['manage_partition', 'list_and_drop_FK','create_logs', 'Check_partition_continuity'];
     func_record RECORD;
     schema_name TEXT;
